@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'CreditCardApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for CreditCardApp
+
+  target 'CreditCardAppAcceptanceTests' do
+    # Pods for testing
+
+	pod 'Cucumberish', '~> 1.4'	
+
+  end
+
+  target 'CreditCardAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'CreditCardAppUITests' do
+    # Pods for testing
+
+	pod 'Cucumberish', '~> 1.4'
+
+  end
+
+end
