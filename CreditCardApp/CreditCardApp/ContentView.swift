@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+
     @ObservedObject var applyCreditCardViewModel: ApplyCreditCardViewModel
     
-    init(){
-        self.applyCreditCardViewModel = ApplyCreditCardViewModel()
+    init() {
+        self.applyCreditCardViewModel = ApplyCreditCardViewModel(service: CreditScoreService())
     }
     
     var body: some View {
@@ -23,18 +23,18 @@ struct ContentView: View {
                 
                 TextField("Enter name", text: self.$applyCreditCardViewModel.name)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .accessibility(identifier: "nameTetField")
+                    .accessibility(identifier: "nameTextField")
                 
                 TextField("Enter ssn", text: self.$applyCreditCardViewModel.ssn)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .accessibility(identifier: "ssnTetField")
-                
+                    .accessibility(identifier: "ssnTextField")
+
                 TextField("Enter date of birth", text: self.$applyCreditCardViewModel.dob)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .accessibility(identifier: "dobTetField")
+                    .accessibility(identifier: "dobTextField")
                 
                 Button("Apply") {
-                    
+
                     self.applyCreditCardViewModel.apply()
                     
                 }.padding(20)

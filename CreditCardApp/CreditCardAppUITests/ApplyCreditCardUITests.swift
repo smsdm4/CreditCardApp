@@ -10,35 +10,27 @@ import XCTest
 class when_under_18_user_applies_for_credit_card: XCTestCase {
 
     // MARK: - Properties
-    private var app: XCUIApplication!
+    private var applyCreditCardPage: ApplyCreditCardPage!
     
     // MARK: - LifeCycles
     override func setUp() {
         super.setUp()
-        self.app = XCUIApplication()
-        self.app.launch()
+        self.applyCreditCardPage = ApplyCreditCardPage()
+        self.applyCreditCardPage.launch()
     }
     
     // MARK: - Tests
     func test_should_see_a_denied_message_on_the_screen() {
         
-        let nameTextField = self.app.textFields["nameTetField"]
-        nameTextField.tap()
-        nameTextField.typeText("Mojtaba Mirzadeh" + "\n")
+        self.applyCreditCardPage.typeInName("Mojtaba Mirzadeh")
         
-        let ssnTextField = self.app.textFields["ssnTetField"]
-        ssnTextField.tap()
-        ssnTextField.typeText("123-00-1306" + "\n")
+        self.applyCreditCardPage.typeInSsn("123-00-1306")
         
-        let dobTextField = self.app.textFields["dobTetField"]
-        dobTextField.tap()
-        dobTextField.typeText("08/16/2011" + "\n")
+        self.applyCreditCardPage.typeInDob("08/16/2008")
         
-        self.app.buttons["applyButton"].tap()
+        self.applyCreditCardPage.tapApplyButton()
         
-        let messageLabel = self.app.staticTexts["messageLabel"]
-        
-        XCTAssertEqual("Denied; Underage", messageLabel.label)
+        XCTAssertEqual("Denied; UnderAge", self.applyCreditCardPage.messageText)
         
     }
     

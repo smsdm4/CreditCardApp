@@ -11,10 +11,14 @@ import XCTest
 
 class UnderAgeApplyingCardSteps {
     
+    // MARK: - Helpers
     func run() {
         
+        let applyCreditCardPage = ApplyCreditCardPage()
+        
         Given("the following user information") { arg, userInfo in
-            XCUIApplication().launch()
+            
+            applyCreditCardPage.launch()
             
             let rows: NSArray = userInfo?["DataTable"] as! NSArray
             
@@ -25,29 +29,22 @@ class UnderAgeApplyingCardSteps {
                 let ssn = data[1] as! String
                 let dob = data[2] as! String
                 
-                let nameTextField = XCUIApplication().textFields["nameTetField"]
-                nameTextField.tap()
-                nameTextField.typeText(name + "\n")
+                applyCreditCardPage.typeInName(name)
                 
-                let ssnTextField = XCUIApplication().textFields["ssnTetField"]
-                ssnTextField.tap()
-                ssnTextField.typeText(ssn + "\n")
+                applyCreditCardPage.typeInSsn(ssn)
                 
-                let dobTextField = XCUIApplication().textFields["dobTetField"]
-                dobTextField.tap()
-                dobTextField.typeText(dob + "\n")
+                applyCreditCardPage.typeInDob(dob)
                 
             }
             
         }
         
         When("user press the apply button") { _, _ in
-            XCUIApplication().buttons["applyButton"].tap()
+            applyCreditCardPage.tapApplyButton()
         }
         
         Then("user should get a rejection message") { _, _ in
-            let messageLabel = XCUIApplication().staticTexts["messageLabel"]
-            XCTAssertEqual("Denied; Underage", messageLabel.label)
+            XCTAssertEqual("Denied; UnderAge", applyCreditCardPage.messageText)
         }
         
     }
