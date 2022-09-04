@@ -12,9 +12,11 @@ class CucumberishInitializer: NSObject {
     
     @objc class func setupCucumberish() {
         
+        let underAgeApplyingCardSteps = UnderAgeApplyingCardSteps()
+        
         before({ _ in
             
-           
+            underAgeApplyingCardSteps.run()
             
         })
         

@@ -10,16 +10,20 @@
 		08FA4D91FB66E0402D26E963 /* Pods_CreditCardApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE376926AFA8D6CE685474E0 /* Pods_CreditCardApp.framework */; };
 		5E5879CB2106F5032F799E71 /* Pods_CreditCardApp_CreditCardAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26588FD3B7233CCE65B394D0 /* Pods_CreditCardApp_CreditCardAppUITests.framework */; };
 		91FE9858EC1F5A97E1F9C37E /* Pods_CreditCardAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F7A2026AFC74F19793B953 /* Pods_CreditCardAppTests.framework */; };
+		B5BE6EF228BF71000081F439 /* ApplyCreditCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE6EF128BF71000081F439 /* ApplyCreditCardViewModel.swift */; };
+		B5BE6EF528BF771C0081F439 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE6EF428BF771C0081F439 /* User.swift */; };
+		B5BE6EF828BF79AD0081F439 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE6EF728BF79AD0081F439 /* String+Extensions.swift */; };
+		B5BE6EFA28BF7B720081F439 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE6EF928BF7B720081F439 /* UserTests.swift */; };
 		B5D0F4E028BCB744006D2C79 /* CreditCardAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0F4DF28BCB744006D2C79 /* CreditCardAppApp.swift */; };
 		B5D0F4E228BCB744006D2C79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0F4E128BCB744006D2C79 /* ContentView.swift */; };
 		B5D0F4E428BCB745006D2C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D0F4E328BCB745006D2C79 /* Assets.xcassets */; };
 		B5D0F4E728BCB745006D2C79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D0F4E628BCB745006D2C79 /* Preview Assets.xcassets */; };
-		B5D0F4F128BCB745006D2C79 /* CreditCardAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0F4F028BCB745006D2C79 /* CreditCardAppTests.swift */; };
-		B5D0F4FB28BCB745006D2C79 /* CreditCardAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0F4FA28BCB745006D2C79 /* CreditCardAppUITests.swift */; };
-		B5D0F4FD28BCB745006D2C79 /* CreditCardAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0F4FC28BCB745006D2C79 /* CreditCardAppUITestsLaunchTests.swift */; };
+		B5D0F4F128BCB745006D2C79 /* ApplyCreditCardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0F4F028BCB745006D2C79 /* ApplyCreditCardViewModelTests.swift */; };
+		B5D0F4FB28BCB745006D2C79 /* ApplyCreditCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0F4FA28BCB745006D2C79 /* ApplyCreditCardUITests.swift */; };
 		B5D0F51928BCB77D006D2C79 /* Features in Resources */ = {isa = PBXBuildFile; fileRef = B5D0F51828BCB77D006D2C79 /* Features */; };
 		B5D0F51C28BCB800006D2C79 /* CucumberishLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D0F51B28BCB800006D2C79 /* CucumberishLoader.m */; };
 		B5D0F51E28BCB830006D2C79 /* CucumberishInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0F51D28BCB830006D2C79 /* CucumberishInitializer.swift */; };
+		B5D0F52128BCD41C006D2C79 /* UnderAgeApplyingCardSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0F52028BCD41C006D2C79 /* UnderAgeApplyingCardSteps.swift */; };
 		F3390159588C87D5BDA7A191 /* Pods_CreditCardApp_CreditCardAppAcceptanceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 854D3C8D125B2D735747A8A9 /* Pods_CreditCardApp_CreditCardAppAcceptanceTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,21 +58,25 @@
 		519916E227CEDE28A3E52D71 /* Pods-CreditCardApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardApp.release.xcconfig"; path = "Target Support Files/Pods-CreditCardApp/Pods-CreditCardApp.release.xcconfig"; sourceTree = "<group>"; };
 		6D84FEA4E6BEAE33B2BF7E4A /* Pods-CreditCardApp-CreditCardAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardApp-CreditCardAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-CreditCardApp-CreditCardAppUITests/Pods-CreditCardApp-CreditCardAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		854D3C8D125B2D735747A8A9 /* Pods_CreditCardApp_CreditCardAppAcceptanceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreditCardApp_CreditCardAppAcceptanceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5BE6EF128BF71000081F439 /* ApplyCreditCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyCreditCardViewModel.swift; sourceTree = "<group>"; };
+		B5BE6EF428BF771C0081F439 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B5BE6EF728BF79AD0081F439 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		B5BE6EF928BF7B720081F439 /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		B5D0F4DC28BCB744006D2C79 /* CreditCardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D0F4DF28BCB744006D2C79 /* CreditCardAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardAppApp.swift; sourceTree = "<group>"; };
 		B5D0F4E128BCB744006D2C79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5D0F4E328BCB745006D2C79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5D0F4E628BCB745006D2C79 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5D0F4EC28BCB745006D2C79 /* CreditCardAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditCardAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5D0F4F028BCB745006D2C79 /* CreditCardAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardAppTests.swift; sourceTree = "<group>"; };
+		B5D0F4F028BCB745006D2C79 /* ApplyCreditCardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyCreditCardViewModelTests.swift; sourceTree = "<group>"; };
 		B5D0F4F628BCB745006D2C79 /* CreditCardAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditCardAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5D0F4FA28BCB745006D2C79 /* CreditCardAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardAppUITests.swift; sourceTree = "<group>"; };
-		B5D0F4FC28BCB745006D2C79 /* CreditCardAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B5D0F4FA28BCB745006D2C79 /* ApplyCreditCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyCreditCardUITests.swift; sourceTree = "<group>"; };
 		B5D0F50D28BCB760006D2C79 /* CreditCardAppAcceptanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditCardAppAcceptanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D0F51828BCB77D006D2C79 /* Features */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Features; sourceTree = "<group>"; };
 		B5D0F51A28BCB800006D2C79 /* CreditCardAppAcceptanceTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CreditCardAppAcceptanceTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		B5D0F51B28BCB800006D2C79 /* CucumberishLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CucumberishLoader.m; sourceTree = "<group>"; };
 		B5D0F51D28BCB830006D2C79 /* CucumberishInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CucumberishInitializer.swift; sourceTree = "<group>"; };
+		B5D0F52028BCD41C006D2C79 /* UnderAgeApplyingCardSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderAgeApplyingCardSteps.swift; sourceTree = "<group>"; };
 		C4A9309E04B16F50C77B07D3 /* Pods-CreditCardApp-CreditCardAppAcceptanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardApp-CreditCardAppAcceptanceTests.release.xcconfig"; path = "Target Support Files/Pods-CreditCardApp-CreditCardAppAcceptanceTests/Pods-CreditCardApp-CreditCardAppAcceptanceTests.release.xcconfig"; sourceTree = "<group>"; };
 		C5F7A2026AFC74F19793B953 /* Pods_CreditCardAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreditCardAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA63FB306BF0B8D8B71571C6 /* Pods-CreditCardApp-CreditCardAppAcceptanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardApp-CreditCardAppAcceptanceTests.debug.xcconfig"; path = "Target Support Files/Pods-CreditCardApp-CreditCardAppAcceptanceTests/Pods-CreditCardApp-CreditCardAppAcceptanceTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +132,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B5BE6EEE28BF6F340081F439 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B5D0F4F028BCB745006D2C79 /* ApplyCreditCardViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B5BE6EEF28BF6F3C0081F439 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5BE6EF928BF7B720081F439 /* UserTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5BE6EF028BF70E70081F439 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B5BE6EF128BF71000081F439 /* ApplyCreditCardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B5BE6EF328BF77120081F439 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5BE6EF428BF771C0081F439 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5BE6EF628BF796B0081F439 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B5BE6EF728BF79AD0081F439 /* String+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		B5D0F4D328BCB744006D2C79 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +199,9 @@
 		B5D0F4DE28BCB744006D2C79 /* CreditCardApp */ = {
 			isa = PBXGroup;
 			children = (
+				B5BE6EF628BF796B0081F439 /* Extension */,
+				B5BE6EF328BF77120081F439 /* Model */,
+				B5BE6EF028BF70E70081F439 /* ViewModel */,
 				B5D0F4DF28BCB744006D2C79 /* CreditCardAppApp.swift */,
 				B5D0F4E128BCB744006D2C79 /* ContentView.swift */,
 				B5D0F4E328BCB745006D2C79 /* Assets.xcassets */,
@@ -170,7 +221,8 @@
 		B5D0F4EF28BCB745006D2C79 /* CreditCardAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				B5D0F4F028BCB745006D2C79 /* CreditCardAppTests.swift */,
+				B5BE6EEF28BF6F3C0081F439 /* Model */,
+				B5BE6EEE28BF6F340081F439 /* ViewModel */,
 			);
 			path = CreditCardAppTests;
 			sourceTree = "<group>";
@@ -178,8 +230,7 @@
 		B5D0F4F928BCB745006D2C79 /* CreditCardAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B5D0F4FA28BCB745006D2C79 /* CreditCardAppUITests.swift */,
-				B5D0F4FC28BCB745006D2C79 /* CreditCardAppUITestsLaunchTests.swift */,
+				B5D0F4FA28BCB745006D2C79 /* ApplyCreditCardUITests.swift */,
 			);
 			path = CreditCardAppUITests;
 			sourceTree = "<group>";
@@ -187,12 +238,21 @@
 		B5D0F50E28BCB760006D2C79 /* CreditCardAppAcceptanceTests */ = {
 			isa = PBXGroup;
 			children = (
+				B5D0F51F28BCD3F7006D2C79 /* Steps */,
 				B5D0F51828BCB77D006D2C79 /* Features */,
 				B5D0F51D28BCB830006D2C79 /* CucumberishInitializer.swift */,
 				B5D0F51B28BCB800006D2C79 /* CucumberishLoader.m */,
 				B5D0F51A28BCB800006D2C79 /* CreditCardAppAcceptanceTests-Bridging-Header.h */,
 			);
 			path = CreditCardAppAcceptanceTests;
+			sourceTree = "<group>";
+		};
+		B5D0F51F28BCD3F7006D2C79 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				B5D0F52028BCD41C006D2C79 /* UnderAgeApplyingCardSteps.swift */,
+			);
+			path = Steps;
 			sourceTree = "<group>";
 		};
 		B8F2BDA2668E0B13460FF37F /* Pods */ = {
@@ -503,7 +563,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BE6EF828BF79AD0081F439 /* String+Extensions.swift in Sources */,
+				B5BE6EF528BF771C0081F439 /* User.swift in Sources */,
 				B5D0F4E228BCB744006D2C79 /* ContentView.swift in Sources */,
+				B5BE6EF228BF71000081F439 /* ApplyCreditCardViewModel.swift in Sources */,
 				B5D0F4E028BCB744006D2C79 /* CreditCardAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,7 +575,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5D0F4F128BCB745006D2C79 /* CreditCardAppTests.swift in Sources */,
+				B5BE6EFA28BF7B720081F439 /* UserTests.swift in Sources */,
+				B5D0F4F128BCB745006D2C79 /* ApplyCreditCardViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,8 +584,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5D0F4FB28BCB745006D2C79 /* CreditCardAppUITests.swift in Sources */,
-				B5D0F4FD28BCB745006D2C79 /* CreditCardAppUITestsLaunchTests.swift in Sources */,
+				B5D0F4FB28BCB745006D2C79 /* ApplyCreditCardUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +593,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D0F51E28BCB830006D2C79 /* CucumberishInitializer.swift in Sources */,
+				B5D0F52128BCD41C006D2C79 /* UnderAgeApplyingCardSteps.swift in Sources */,
 				B5D0F51C28BCB800006D2C79 /* CucumberishLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
